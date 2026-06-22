@@ -1,0 +1,6 @@
+{
+  "name": "Palette Bishkek — Творческий интернет-магазин",
+  "description": "Официальный одностраничный магазин наборов для отпечатков рук влюбленных и картин по номерам в Бишкеке.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
