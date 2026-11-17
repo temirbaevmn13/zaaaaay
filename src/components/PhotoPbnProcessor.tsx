@@ -197,7 +197,7 @@ export default function PhotoPbnProcessor() {
 🚚 *Доставка по Бишкеку*: Бесплатная`;
 
     const encodedText = encodeURIComponent(textDesc);
-    window.open(`https://wa.me/996509322111?text=${encodedText}`, '_blank');
+    window.open(`https://wa.me/996709322111?text=${encodedText}`, '_blank');
   };
 
   return (
