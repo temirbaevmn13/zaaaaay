@@ -76,7 +76,7 @@ ${listTitles}
 💵 *Итоговая сумма к оплате*: *${finalPrice} сом*`;
 
     const encodedText = encodeURIComponent(message);
-    window.open(`https://wa.me/996707323232?text=${encodedText}`, '_blank');
+    window.open(`https://wa.me/996509322111?text=${encodedText}`, '_blank');
   };
 
   return (

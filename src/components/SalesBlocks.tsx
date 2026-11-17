@@ -1,6 +1,6 @@
 import { MessageCircle, Zap, Truck, MapPin, Gift } from 'lucide-react';
 
-const WA = 'https://wa.me/996707323232';
+const WA = 'https://wa.me/996509322111';
 const wa = (t: string) => `${WA}?text=${encodeURIComponent(t)}`;
 const btn = 'inline-flex items-center justify-center gap-2 rounded-full bg-brand-terracotta hover:bg-brand-brick text-white font-bold px-6 py-3 transition-colors';
 

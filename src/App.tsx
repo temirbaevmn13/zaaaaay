@@ -10,7 +10,7 @@ import { StickyOrderBar } from './components/SalesBlocks';
 import handprintImg from './assets/images/handprint_kit_1782142632713.jpg';
 import pbnImg from './assets/images/paint_by_numbers_kit_1782142648892.jpg';
 
-const WA = 'https://wa.me/996707323232';
+const WA = 'https://wa.me/996509322111';
 const IG = 'https://www.instagram.com/palette_bishkek?igsh=MW44MTMyam12OWUyMw==';
 const MAP = 'https://2gis.kg/bishkek/search/%D0%92%D0%BE%D1%81%D1%82%D0%BE%D0%BA%205%2020';
 type Tab = 'hand' | 'photo' | 'ready';
