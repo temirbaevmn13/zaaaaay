@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 import { useState } from 'react';
 import { motion } from 'motion/react';
-import { Instagram, MapPin, Truck, MessageCircle, ArrowUpRight, Heart, Camera, Brush } from 'lucide-react';
+import { Instagram, MapPin, Truck, MessageCircle, ArrowUpRight } from 'lucide-react';
 
 import HandprintVisualizer from './components/HandprintVisualizer';
 import PhotoPbnProcessor from './components/PhotoPbnProcessor';
@@ -30,12 +30,7 @@ export default function App() {
       <header className="sticky top-0 z-40 bg-canvas-cream/90 backdrop-blur border-b border-ink/10">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <a href="#top" className="font-display font-extrabold text-xl tracking-tight">palette<span className="text-vermilion">.</span>bishkek</a>
-          <nav className="hidden md:flex gap-7 text-sm font-semibold">
-            <button onClick={() => go('hand')}>Отпечатки</button>
-            <button onClick={() => go('photo')}>По фото</button>
-            <button onClick={() => go('ready')}>В наличии</button>
-            <a href="#delivery">Доставка</a>
-          </nav>
+          
           <a href={WA} target="_blank" rel="noreferrer" className="rounded-full bg-ink text-white text-sm font-bold px-5 py-2.5 flex items-center gap-2">
             <MessageCircle size={16} />Написать
           </a>
@@ -44,9 +39,8 @@ export default function App() {
 
       <section id="top" className="max-w-6xl mx-auto px-4 pt-10 pb-14 md:pt-16 grid md:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <p className="inline-flex items-center gap-2 rounded-full bg-sand px-4 py-1.5 text-sm font-semibold mb-6"><span className="w-2 h-2 rounded-full bg-vermilion" />Бишкек · готово за 1 день</p>
           <h1 className="font-display font-extrabold text-5xl md:text-7xl leading-[0.98] tracking-tight">Ваша <span className="text-vermilion">история</span> на холсте</h1>
-          <p className="mt-6 text-lg text-ink/70 max-w-md">Наборы для отпечатков рук влюблённых и картины по номерам. Доставка по Бишкеку бесплатно.</p>
+          <p className="mt-6 text-lg text-ink/70 max-w-md">Отпечатки рук и картины по номерам. Готово за 1 день.</p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <button onClick={() => go('hand')} className={cta + ' bg-ink text-white'}>Собрать набор <ArrowUpRight size={18} /></button>
             <a href={WA} target="_blank" rel="noreferrer" className={cta + ' border-2 border-ink/20'}><MessageCircle size={18} />WhatsApp</a>
@@ -58,22 +52,6 @@ export default function App() {
           <img src={handprintImg} alt="Набор для отпечатков рук" className="relative w-1/2 h-[88%] object-cover rounded-t-[999px] rounded-b-3xl" />
           <img src={pbnImg} alt="Картина по номерам" className="relative w-1/2 h-[72%] object-cover rounded-t-[999px] rounded-b-3xl" />
         </div>
-      </section>
-
-      <section className="max-w-6xl mx-auto px-4 pb-14 grid md:grid-cols-3 gap-4">
-        {[
-          { id: 'hand' as Tab, Icon: Heart, h: 'Отпечатки рук', p: '1 холст 20×30 — 890 сом. 2 холста — 1190 сом. Глиттер +70 сом.' },
-          { id: 'photo' as Tab, Icon: Camera, h: 'Картина по вашему фото', p: 'Размеры 30×40, 40×50 и 50×70 см, от 26 до 52 цветов.' },
-          { id: 'ready' as Tab, Icon: Brush, h: 'Готовые картины', p: 'От 1250 сом. Три картины: третья в подарок или скидка 15%.' },
-        ].map(({ id, Icon, h, p }) => (
-          <button key={id} onClick={() => go(id)} className="bg-white text-ink border border-ink/10 hover:border-ink text-left rounded-3xl p-7 min-h-56 flex flex-col justify-between transition-colors">
-            <span className="w-12 h-12 rounded-full bg-sand text-vermilion flex items-center justify-center"><Icon size={24} /></span>
-            <div>
-              <h3 className="font-display font-bold text-xl mb-2">{h}</h3>
-              <p className="text-ink/70">{p}</p>
-            </div>
-          </button>
-        ))}
       </section>
 
       <section id="builder" className="max-w-6xl mx-auto px-4 pb-14">
@@ -92,22 +70,12 @@ export default function App() {
       </section>
 
       <section id="delivery" className="max-w-6xl mx-auto px-4 pb-14">
-        <div className="rounded-3xl bg-ink text-white p-7 md:p-14">
-          <h2 className="font-display font-extrabold text-3xl md:text-4xl mb-8 tracking-tight">Как получить заказ</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="rounded-3xl bg-white/10 p-7">
-              <Truck className="text-tangerine mb-3" size={28} />
-              <h3 className="font-display font-bold text-xl mb-2">Бесплатная доставка по Бишкеку</h3>
-              <p className="text-white/70 mb-5">Напишите адрес в WhatsApp, и мы договоримся о времени.</p>
-              <a href={WA} target="_blank" rel="noreferrer" className={cta + ' bg-tangerine text-ink'}>Написать в WhatsApp</a>
-            </div>
-            <div className="rounded-3xl bg-white/10 p-7">
-              <MapPin className="text-tangerine mb-3" size={28} />
-              <h3 className="font-display font-bold text-xl mb-2">Самовывоз: Восток-5</h3>
-              <p className="text-white/70 mb-5">Откройте точку на карте 2ГИС и заберите готовый заказ.</p>
-              <a href={MAP} target="_blank" rel="noreferrer" className={cta + ' bg-white text-ink'}>Открыть в 2ГИС</a>
-            </div>
+        <div className="rounded-3xl bg-ink text-white p-7 md:p-10 flex flex-wrap items-center justify-between gap-6">
+          <div className="flex flex-col gap-3 font-semibold">
+            <span className="flex items-center gap-3"><Truck className="text-tangerine" size={22} />Бесплатная доставка по Бишкеку</span>
+            <span className="flex items-center gap-3"><MapPin className="text-tangerine" size={22} />Самовывоз: Восток-5 · <a href={MAP} target="_blank" rel="noreferrer" className="underline">2ГИС</a></span>
           </div>
+          <a href={WA} target="_blank" rel="noreferrer" className={cta + ' bg-tangerine text-ink'}><MessageCircle size={18} />Написать в WhatsApp</a>
         </div>
       </section>
 
