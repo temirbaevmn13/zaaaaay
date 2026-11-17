@@ -305,7 +305,7 @@ export default function HandprintVisualizer({ onOrder }: HandprintVisualizerProp
                         className={`w-full aspect-square rounded-lg border-2 transition-transform hover:scale-105 relative flex items-center justify-center`}
                         style={{ 
                           backgroundColor: paint.hex,
-                          borderColor: config.leftHandColor === paint.hex ? '#c45d44' : '#e5e7eb' 
+                          borderColor: config.leftHandColor === paint.hex ? '#b83405' : '#e5e7eb' 
                         }}
                         title={paint.name}
                       >
@@ -331,7 +331,7 @@ export default function HandprintVisualizer({ onOrder }: HandprintVisualizerProp
                         className={`w-full aspect-square rounded-lg border-2 transition-transform hover:scale-105 relative flex items-center justify-center`}
                         style={{ 
                           backgroundColor: paint.hex,
-                          borderColor: config.rightHandColor === paint.hex ? '#c45d44' : '#e5e7eb' 
+                          borderColor: config.rightHandColor === paint.hex ? '#b83405' : '#e5e7eb' 
                         }}
                         title={paint.name}
                       >
@@ -417,14 +417,14 @@ export default function HandprintVisualizer({ onOrder }: HandprintVisualizerProp
             <div>
               <span className="text-xs text-stone-500 font-medium">Общая стоимость:</span>
               <div className="flex items-baseline gap-1.5 mt-0.5">
-                <span className="text-3xl font-serif text-[#3d2c29]">{totalPrice} сом</span>
+                <span className="text-3xl font-serif text-[#0e0e0e]">{totalPrice} сом</span>
                 <span className="text-xs text-brand-brick font-medium uppercase tracking-wider">бесплатная доставка🚚</span>
               </div>
             </div>
 
             <button
               onClick={handleWhatsAppSubmit}
-              className="py-3 px-6 bg-[#e48b6f] hover:bg-[#c45d44] text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-sm transition-all text-xs uppercase tracking-wider cursor-pointer"
+              className="py-3 px-6 bg-[#d93f08] hover:bg-[#b83405] text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-sm transition-all text-xs uppercase tracking-wider cursor-pointer"
             >
               <Send size={16} />
               Заказать через WhatsApp

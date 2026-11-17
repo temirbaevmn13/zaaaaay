@@ -101,7 +101,7 @@ ${listTitles}
           <div className="mt-4 md:mt-0 bg-stone-50 py-2.5 px-4 rounded-xl border border-stone-200 text-right animate-fade-in">
             <span className="text-[11px] text-stone-500 block">Стоимость картины:</span>
             <div className="flex items-baseline gap-1 mt-0.5 justify-end">
-              <span className="text-xl font-serif font-bold text-[#3d2c29]">1 250 сом</span>
+              <span className="text-xl font-serif font-bold text-[#0e0e0e]">1 250 сом</span>
               <span className="text-[11px] text-stone-500 font-semibold">Доставка бесплатная🚚</span>
             </div>
           </div>
@@ -123,7 +123,7 @@ ${listTitles}
             <span className="px-3 py-1.5 bg-white border border-brand-terracotta/20 text-brand-brick rounded-lg text-xs font-bold leading-none flex items-center justify-center shadow-2xs">
               Каждая 3-я бесплатно
             </span>
-            <span className="px-3 py-1.5 bg-[#e48b6f] text-white rounded-lg text-xs font-bold leading-none flex items-center justify-center shadow-2xs">
+            <span className="px-3 py-1.5 bg-[#d93f08] text-white rounded-lg text-xs font-bold leading-none flex items-center justify-center shadow-2xs">
               Или -15%
             </span>
           </div>
@@ -172,8 +172,8 @@ ${listTitles}
                     <p className="text-[10px] text-stone-400 mt-0.5">В комплекте: картина 40*50см, краски, 3 кисти</p>
                   </div>
                   <div className="flex items-center justify-between mt-3 pt-2 border-t border-stone-100">
-                    <span className="text-xs font-serif font-bold text-[#3d2c29]">1 250 сом</span>
-                    <span className="text-[10px] font-bold text-[#e48b6f] opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-0.5">
+                    <span className="text-xs font-serif font-bold text-[#0e0e0e]">1 250 сом</span>
+                    <span className="text-[10px] font-bold text-[#d93f08] opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-0.5">
                       {isSelected ? 'Убрать' : '+ Добавить'}
                     </span>
                   </div>
@@ -188,7 +188,7 @@ ${listTitles}
           <motion.div 
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            className="p-6 bg-[#3d2c29] text-white rounded-2xl relative"
+            className="p-6 bg-[#0e0e0e] text-white rounded-2xl relative"
           >
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
               
@@ -228,7 +228,7 @@ ${listTitles}
                     onClick={() => setPromoChoice('free_item')}
                     className={`py-2 px-3 text-left rounded-lg text-xs font-bold transition-all border ${
                       promoChoice === 'free_item'
-                        ? 'bg-[#c45d44] text-white border-[#c45d44]'
+                        ? 'bg-[#b83405] text-white border-[#b83405]'
                         : 'bg-stone-900/40 text-stone-340 border-stone-800 hover:bg-stone-800'
                     }`}
                   >
@@ -241,7 +241,7 @@ ${listTitles}
                     onClick={() => setPromoChoice('discount_15')}
                     className={`py-2 px-3 text-left rounded-lg text-xs font-bold transition-all border ${
                       promoChoice === 'discount_15'
-                        ? 'bg-[#c45d44] text-white border-[#c45d44]'
+                        ? 'bg-[#b83405] text-white border-[#b83405]'
                         : 'bg-stone-900/40 text-stone-340 border-stone-800 hover:bg-stone-800'
                     }`}
                   >
@@ -262,7 +262,7 @@ ${listTitles}
                 <div className="text-[10px] text-stone-300">Сумма без скидки: {rawTotal} сом</div>
                 
                 {savings > 0 && (
-                  <div className="text-xs text-[#e48b6f] font-bold mt-0.5">
+                  <div className="text-xs text-[#d93f08] font-bold mt-0.5">
                     Экономия: -{savings} сом
                   </div>
                 )}
@@ -281,7 +281,7 @@ ${listTitles}
                 <button
                   type="button"
                   onClick={handleWhatsAppCheckout}
-                  className="w-full mt-3 py-2.5 px-4 bg-[#e48b6f] hover:bg-[#c45d44] text-white font-bold rounded-lg text-xs flex items-center justify-center gap-1.5 cursor-pointer shadow-xs transition-colors"
+                  className="w-full mt-3 py-2.5 px-4 bg-[#d93f08] hover:bg-[#b83405] text-white font-bold rounded-lg text-xs flex items-center justify-center gap-1.5 cursor-pointer shadow-xs transition-colors"
                 >
                   <Send size={12} />
                   Подтвердить в WhatsApp

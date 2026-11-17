@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Onest:wght@600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-display: "Space Grotesk", sans-serif;
-  --font-creative: "Comfortaa", sans-serif;
+  --font-sans: "Golos Text", system-ui, sans-serif;
+  --font-serif: "Golos Text", system-ui, sans-serif;
+  --font-display: "Onest", "Golos Text", sans-serif;
 
-  --color-canvas-cream: #fdfaf5;
-  --color-canvas-charcoal: #3d2c29;
-  --color-canvas-clay: #f8f1eb;
-  
-  --color-brand-terracotta: #e48b6f;
-  --color-brand-brick: #c45d44;
+  --color-ink: #0e0e0e;
+  --color-vermilion: #d93f08;
+  --color-tangerine: #ff6a2b;
+  --color-sand: #e9e4da;
+  --color-canvas-cream: #f4f3ef;
+  --color-canvas-charcoal: #0e0e0e;
+  --color-canvas-clay: #ebe8e1;
+  --color-brand-terracotta: #d93f08;
+  --color-brand-brick: #b83405;
 
   --color-paint-gold: #d4af37;
   --color-paint-silver: #b0b3b4;
@@ -23,10 +25,9 @@
 }
 
 @layer base {
-  body {
-    background-color: var(--color-canvas-cream);
-    color: var(--color-canvas-charcoal);
-    font-family: var(--font-sans);
-  }
+  body { background-color: var(--color-canvas-cream); color: var(--color-ink); font-family: "Golos Text", system-ui, sans-serif; }
+  .font-serif { font-weight: 700; letter-spacing: -0.01em; }
+  .font-serif.italic { font-style: normal; }
+  :focus-visible { outline: 3px solid var(--color-vermilion); outline-offset: 2px; }
 }
-
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }

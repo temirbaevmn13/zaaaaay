@@ -410,7 +410,7 @@ export default function PhotoPbnProcessor() {
                 <button
                   type="button"
                   onClick={handleWhatsAppOrder}
-                  className="w-full md:w-auto py-3 px-5 bg-[#e48b6f] hover:bg-[#c45d44] text-white font-bold rounded-xl flex items-center justify-center gap-2 cursor-pointer text-xs uppercase tracking-wider transition-colors shadow-xs shrink-0"
+                  className="w-full md:w-auto py-3 px-5 bg-[#d93f08] hover:bg-[#b83405] text-white font-bold rounded-xl flex items-center justify-center gap-2 cursor-pointer text-xs uppercase tracking-wider transition-colors shadow-xs shrink-0"
                 >
                   <Send size={14} />
                   Отправить фото на оценку
