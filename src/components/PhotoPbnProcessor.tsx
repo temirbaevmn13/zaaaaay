@@ -188,7 +188,7 @@ export default function PhotoPbnProcessor() {
 
   const handleWhatsAppOrder = () => {
     const textDesc = `Добрый день! Хочу сделать заказ на Картину по Номерам ПО ФОТО:
-📸 *Индивидуальное фото заказчика* (отправлено в диалог)
+📸 *Фото заказчика*: пожалуйста, прикрепите фотографию отдельным сообщением в WhatsApp
 📏 *Желаемый размер*: ${currentPreset.name} (${currentPreset.desc})
 🎨 *Количество цветов*: ${colorsCount} цветов
 ⏳ *Срок изготовления*: 12-18 дней
