@@ -102,7 +102,7 @@ export default function App() {
             </a>
 
             <a 
-              href="https://wa.me/996707323232"
+              href="https://wa.me/996709322111"
               target="_blank"
               rel="noreferrer"
               className="px-4 py-2 sm:py-2.5 rounded-full bg-brand-terracotta hover:bg-brand-brick text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow-xs transition-transform cursor-pointer hover:scale-[1.02]"
@@ -394,7 +394,7 @@ export default function App() {
             </div>
             
             <a 
-              href="https://wa.me/996707323232"
+              href="https://wa.me/996709322111"
               target="_blank"
               rel="noreferrer"
               className="mt-4 text-xs font-bold text-brand-brick hover:text-stone-950 transition-colors flex items-center gap-1 text-left"
@@ -495,7 +495,7 @@ export default function App() {
               </a>
               <span className="text-stone-700">|</span>
               <a 
-                href="https://wa.me/996707323232"
+                href="https://wa.me/996709322111"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-white transition-colors"
