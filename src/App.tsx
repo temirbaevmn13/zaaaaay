@@ -22,10 +22,10 @@ import HandprintVisualizer from './components/HandprintVisualizer';
 import PhotoPbnProcessor from './components/PhotoPbnProcessor';
 import CatalogSection from './components/CatalogSection';
 
-// Exact generated image paths from our background artifacts
-const HERO_BANNER_IMG = '/src/assets/images/palette_hero_banner_1782142616832.jpg';
-const HANDPRINT_PROD_IMG = '/src/assets/images/handprint_kit_1782142632713.jpg';
-const PBN_PROD_IMG = '/src/assets/images/paint_by_numbers_kit_1782142648892.jpg';
+// Import images so Vite bundles them correctly on GitHub Pages and other hosts.
+import HERO_BANNER_IMG from './assets/images/palette_hero_banner_1782142616832.jpg';
+import HANDPRINT_PROD_IMG from './assets/images/handprint_kit_1782142632713.jpg';
+import PBN_PROD_IMG from './assets/images/paint_by_numbers_kit_1782142648892.jpg';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<'handprints' | 'custom-photo' | 'catalog'>('handprints');
