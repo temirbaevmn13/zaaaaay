@@ -6,6 +6,8 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     plugins: [react(), tailwindcss()],
+    // GitHub Pages hosts project sites under /<repository>/.
+    base: process.env.GITHUB_PAGES === 'true' ? '/zaaaaay/' : '/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
