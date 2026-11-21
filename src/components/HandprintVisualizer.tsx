@@ -59,7 +59,7 @@ export default function HandprintVisualizer({ onOrder }: HandprintVisualizerProp
 💵 *К оплате*: *${totalPrice} сом*`;
 
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/996707323232?text=${encodedMessage}`, '_blank'); // Standard Kyrgyzstan sales number placeholder
+    window.open(`https://wa.me/996709322111?text=${encodedMessage}`, '_blank'); // Standard Kyrgyzstan sales number placeholder
   };
 
   return (
